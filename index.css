@@ -1,0 +1,238 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+#background1 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/Images/background-imgs1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  padding: 5%;
+}
+
+#background2 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/Images/background-imgs2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  padding: 5%;
+}
+
+#background3 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/Images/background-imgs3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  padding: 5%;
+}
+
+#row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#col-right-1 {
+  text-align: end;
+  padding: 0;
+}
+
+.text-under-key {
+  opacity: 0;
+  animation: text-under 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes text-under {
+  from {
+    opacity: 0;
+    margin: 0 20px;
+  }
+  to {
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+#type-learn {
+  animation: typelearn 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typelearn {
+  from {
+    opacity: 0;
+    margin-right: 5%;
+  }
+  to {
+    opacity: 1;
+    margin-right: 0;
+  }
+}
+
+#start-button {
+  background-color: unset;
+  width: 80px;
+  height: 80px;
+  border: none;
+}
+
+.des-text {
+  font-size: 1.3em;
+  font-family: "Comfortaa", cursive;
+  color: #c2f0fc;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+#start-button {
+  margin: 50px 100px 0 100px;
+  color: #c2f0fc;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 10pt;
+  opacity: 0;
+  animation-name: startbutappear;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes startbutappear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#start-button img {
+  animation-name: startbut;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+#start-button:hover img {
+  animation-name: none;
+}
+
+#start-button:hover p {
+  color: white;
+}
+
+@keyframes startbut {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 10px;
+  }
+}
+
+#typing-10 {
+  margin-top: 10%;
+  margin-left: 5%;
+  animation: keyboard 1s;
+  animation-delay: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes keyboard {
+  from {
+    opacity: 0;
+    margin-left: 10%;
+  }
+  to {
+    opacity: 1;
+    margin-left: 5%;
+  }
+}
+
+#text-bg-1 {
+  animation: text-bg1 1s;
+  animation-delay: 1s;
+  margin-right: 0;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes text-bg1 {
+  from {
+    margin-right: 5%;
+    opacity: 0;
+  }
+  to {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+
+#col-left-1 {
+  font-family: "Pacifico", cursive;
+  font-size: 40pt;
+  color: white;
+}
+
+#text-left-bg-1 {
+  text-align: start;
+  margin-bottom: 0;
+}
+#text-right-bg-1 {
+  text-align: end;
+}
+
+#watch-more-but {
+  position: fixed;
+  bottom: 2.5%;
+  left: 48%;
+  background-color: unset;
+  border: none;
+}
+
+#watch-more-but:hover {
+  animation-name: watch-more;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes watch-more {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#go-to-top {
+  position: fixed;
+  top: 2.5%;
+  left: 48%;
+  background-color: unset;
+  border: none;
+  transform: rotate(180deg);
+  display: none;
+}
+
+#go-to-top:hover {
+  animation-name: watch-more;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#background4 {
+  width: 100vw;
+  height: 100vh;
+}
