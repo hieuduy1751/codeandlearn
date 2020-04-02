@@ -17,10 +17,11 @@ var charb = document.getElementsByClassName("rainbow-change")[4];
 var charo = document.getElementsByClassName("rainbow-change")[5];
 var charw = document.getElementsByClassName("rainbow-change")[6];
 
-var i = 0;
+var change = 0;
 document.addEventListener("keypress", function(event) {
-  while (event.key == rainbowarr[i]) {
-    "char" + rainbowarr[i] + ".style.color =" + '"' + colorrbarr[i] + '"';
+  if (event.key == rainbowarr[change]) {
+    document.getElementsByClassName("rainbow-change")[change].style.color =
+      colorrbarr[change];
+    change++;
   }
-  console.log(i);
 });
