@@ -236,3 +236,101 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+.col-left-2 {
+  text-align: left;
+  color: #c2f0fc;
+}
+
+.col-right-2 {
+  text-align: right;
+  color: white;
+  position: relative;
+  height: 80vh;
+}
+
+.text-func {
+  font-size: 100px;
+  font-family: "Josefin Sans";
+  animation-duration: 1s;
+  animation-name: none;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+
+@keyframes typeandlearn {
+  from {
+    opacity: 0;
+    margin: 0 20px;
+  }
+  to {
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+.learn-bg2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+
+#keyboard-main {
+  width: 87%;
+  margin: 8vh 0;
+  animation-name: none;
+  animation-fill-mode: forwards;
+  animation-delay: 0.7s;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+@keyframes keyboardmain {
+  from {
+    opacity: 0;
+    margin-left: 20px;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+#keyboard-main + p {
+  position: absolute;
+  left: 35%;
+  bottom: 5%;
+  font-family: "Josefin Sans";
+  font-size: 10pt;
+  animation-name: none;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+#rainbow-text {
+  color: #856c8b;
+  font-family: "Josefin Sans";
+  font-size: 70px;
+
+  margin-top: 35%;
+  animation-name: none;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+@keyframes rainbowtext {
+  from {
+    opacity: 0;
+    margin-top: 30%;
+  }
+  to {
+    opacity: 1;
+    margin-top: 35%;
+  }
+}
