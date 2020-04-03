@@ -235,6 +235,7 @@ body {
 #background4 {
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 .col-left-2 {
@@ -395,4 +396,157 @@ img[alt="rainbow"] {
     opacity: 1;
     color: pink;
   }
+}
+
+.text-func-3 {
+  font-family: "Josefin Sans";
+  font-size: 100px;
+}
+
+.text-func-left-3 {
+  position: absolute;
+  right: -80px;
+  color: #2b580c;
+  top: -15px;
+  animation-name: none;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+.text-func-right-3 {
+  position: absolute;
+  left: 150px;
+  color: #639a67;
+  top: -15px;
+  animation-name: none;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+@keyframes textfunc3 {
+  from {
+    opacity: 0;
+    margin: -30px 0;
+  }
+  to {
+    opacity: 1;
+    margin: 0 0;
+  }
+}
+
+img[alt="speedometer"] {
+  width: 50%;
+  margin: 15% 0 0 20%;
+  animation-name: none;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+img[alt="ukflag"] {
+  width: 50%;
+  margin: 15% 20% 0 30%;
+  animation-name: none;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+@keyframes imgbg3 {
+  from {
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+img[alt="speedometer"] + p {
+  font-family: "Comfortaa";
+  font-size: 30px;
+  text-align: center;
+  margin: 0 10% 0 0;
+  color: #c2f0fc;
+  animation-name: none;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+img[alt="speedometer"] + p + p {
+  font-family: "Comfortaa";
+  font-size: 1.3em;
+  margin: 0 13% 0 7%;
+  color: #c2f0fc;
+  text-align: center;
+  animation-name: none;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+img[alt="ukflag"] + p {
+  font-family: "Comfortaa";
+  font-size: 30px;
+  text-align: center;
+  margin: 0 0 0 10%;
+  color: #c2f0fc;
+  animation-name: none;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+img[alt="ukflag"] + p + p {
+  font-family: "Comfortaa";
+  font-size: 1.3em;
+  margin: 0 7% 0 13%;
+  color: #c2f0fc;
+  text-align: center;
+  animation-name: none;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+@keyframes textdes3 {
+  from {
+    margin-top: 30px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+  width: 100%;
+  background-color: #2b580c;
+  padding: 10px 40px;
+  font-family: "Comfortaa";
+  font-size: 1em;
+  color: #c2f0fc;
+}
+
+img[alt="type-learn-footer"] {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+#footer p {
+  font-size: 1.3em;
 }
