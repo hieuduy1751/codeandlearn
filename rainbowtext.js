@@ -1,4 +1,4 @@
-var rainbowarr = ["r", "a", "i", "n", "b", "o", "w"];
+var rainbowarr = ["r", "a", "i", "n", "b", "o", "w", ""];
 var colorrbarr = [
   "red",
   "orange",
@@ -9,13 +9,9 @@ var colorrbarr = [
   "#ba00ff"
 ];
 
-var charr = document.getElementsByClassName("rainbow-change")[0];
-var chara = document.getElementsByClassName("rainbow-change")[1];
-var chari = document.getElementsByClassName("rainbow-change")[2];
-var charn = document.getElementsByClassName("rainbow-change")[3];
-var charb = document.getElementsByClassName("rainbow-change")[4];
-var charo = document.getElementsByClassName("rainbow-change")[5];
-var charw = document.getElementsByClassName("rainbow-change")[6];
+var keymap = document.getElementsByClassName("key-map")[1];
+var rainbowimg = document.querySelector("img[alt='rainbow']");
+var rainbowmean = document.getElementsByClassName("rainbow-mean")[0];
 
 var change = 0;
 document.addEventListener("keypress", function(event) {
@@ -23,5 +19,10 @@ document.addEventListener("keypress", function(event) {
     document.getElementsByClassName("rainbow-change")[change].style.color =
       colorrbarr[change];
     change++;
+    keymap.src = "/Images/" + rainbowarr[change] + "key.png";
+    if (change == rainbowarr.length - 1) {
+      rainbowimg.style.animationName = "rainbowimg";
+      rainbowmean.style.animationName = "appearmean";
+    }
   }
 });
