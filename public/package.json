@@ -1,0 +1,19 @@
+{
+  "name": "typeandlearn",
+  "version": "1.0.0",
+  "description": "This is my first project to research and learning.",
+  "main": "rainbowtext.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hieuduy1751/codeandlearn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hieuduy1751/codeandlearn/issues"
+  },
+  "homepage": "https://github.com/hieuduy1751/codeandlearn#readme"
+}

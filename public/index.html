@@ -31,7 +31,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body scroll="no" style="overflow: hidden">
+  <body scroll="no" style="overflow: hidden;">
     <div id="background1">
       <div class="row" id="row">
         <div class="col" id="col-left-1">
@@ -53,10 +53,12 @@
             Học từ vựng tiếng anh thông qua việc đánh máy giúp cho việc thuộc từ
             đó nhanh hơn và đồng thời luyện tập kĩ năng đánh máy bằng 10 ngón...
           </p>
-          <button id="start-button">
-            <img src="/Images/next.svg" alt="start-button" width="100%" />
-            <p>BẮT ĐẦU</p>
-          </button>
+          <a href="/type.html">
+            <button id="start-button">
+              <img src="/Images/next.svg" alt="start-button" width="100%" />
+              <p>BẮT ĐẦU</p>
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -208,6 +210,16 @@
         </div>
       </div>
     </div>
+    <!--Firebase-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.13.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.13.2/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
     <!--Script-->
     <script src="watchmorebut.js"></script>
     <script src="rainbowtext.js"></script>
