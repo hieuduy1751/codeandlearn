@@ -32,3 +32,16 @@ menubutton.addEventListener("click", function () {
     }, 20);
   }
 });
+
+var menubar1 = document.getElementById("menu1");
+var menubar3 = document.getElementById("menu3");
+
+menubutton.addEventListener("click", function () {
+  if (countclick % 2 != 0) {
+    menubar1.style.animationName = "transformer";
+    menubar3.style.animationName = "transformer2";
+  } else {
+    menubar1.style.animationName = "transformerclose";
+    menubar3.style.animationName = "transformer2close";
+  }
+});
