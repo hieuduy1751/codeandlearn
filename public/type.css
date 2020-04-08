@@ -33,11 +33,12 @@ body {
   background-color: unset;
   display: flex;
   flex-direction: column;
+  position: relative;
+  cursor: pointer;
 }
 
 .menu-bar {
-  margin: 1.5px;
-  height: 7px;
+  height: 4px;
   width: 27px;
   background-color: white;
 }
@@ -47,4 +48,110 @@ body {
   left: -15%;
   width: 15%;
   height: 100vh;
+  padding-top: 50px;
+  font-family: "Comfortaa";
+  background-color: #116979;
+}
+
+#menu-tab ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: #c2f0fc;
+}
+
+button:focus {
+  border: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00ccff;
+}
+
+#menu1 {
+  animation-name: unset;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+}
+
+#menu2 {
+  position: absolute;
+  top: 13px;
+  left: 3px;
+}
+
+#menu3 {
+  animation-name: unset;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  bottom: 4px;
+  left: 3px;
+}
+
+@keyframes transformer {
+  from {
+    transform: rotate(0);
+    width: 27px;
+    left: 3px;
+    top: 4px;
+  }
+  to {
+    transform: rotate(-45deg);
+    width: 15px;
+    top: 9px;
+    left: 0px;
+  }
+}
+@keyframes transformer2 {
+  from {
+    transform: rotate(0);
+    left: 3px;
+    width: 27px;
+    bottom: 4px;
+  }
+  to {
+    transform: rotate(45deg);
+    width: 15px;
+    bottom: 9px;
+    left: 0px;
+  }
+}
+
+@keyframes transformerclose {
+  from {
+    transform: rotate(-45deg);
+    width: 15px;
+    top: 9px;
+    left: 0px;
+  }
+  to {
+    transform: rotate(0);
+    width: 27px;
+    left: 3px;
+    top: 4px;
+  }
+}
+@keyframes transformer2close {
+  from {
+    transform: rotate(45deg);
+    width: 15px;
+    bottom: 9px;
+    left: 0px;
+  }
+  to {
+    transform: rotate(0);
+    left: 3px;
+    width: 27px;
+    bottom: 4px;
+  }
 }
