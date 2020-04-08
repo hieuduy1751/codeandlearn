@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hieuduy1751/codeandlearn/issues"
   },
-  "homepage": "https://github.com/hieuduy1751/codeandlearn#readme"
+  "homepage": "https://github.com/hieuduy1751/codeandlearn#readme",
+  "dependencies": {
+    "urix": "^0.1.0"
+  }
 }
